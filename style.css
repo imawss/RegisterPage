@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+:root{
+    --primary-c: rgb(31, 31, 31);
+    --white-st: #eeeeee;
+}
+
+body {
+    background-image: url("gradient.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(24, 24, 24);
+    font-family: 'Oswald', sans-serif;
+    color: var(--white-st);
+}
+
+.register-div{
+    height: 475px;
+    width: 300px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+
+.register-div *{
+    font-family: 'Oswald',sans-serif;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+.register-div h3{
+    font-size: 43px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    margin-top: 0%;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+input{
+    display: block;
+    height: 50px;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 90px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--white-st);
+    text-align: center;
+}
+
+::placeholder{
+    color: #e5e5e5;
+    font-size: large;
+}
+
+button{
+    margin-top: 25px;
+    width: 100%;
+    background-color: var(--white-st);
+    color: var(--primary-c);
+    padding: 15px 0;
+    font-size: 25px;
+    font-family: 'Oswald',sans-serif;
+    border-radius: 5px;
+    border-color: transparent;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+button:hover{
+    background-color: var(--primary-c);
+    color: var(--white-st);
+}
